@@ -16,7 +16,6 @@
 <body>
 <h1>Coffee!</h1>
 
-<!--        //<hr class="mb-5">-->
 <hr style="width:80%; margin: auto;"/>
 <!--solid line under header ^-->
 
@@ -25,7 +24,7 @@
     <div class="row">
         <div class="col">
 
-            <!-- left container one w live coffee selection showing-->
+            <!-- left container one w chosen coffee selection showing-->
             <table>
                 <thead>
                 <tr>
@@ -43,39 +42,46 @@
             <!-- right container 2 with drop-downs boxes showing-->
 
                 <form>
-                    <h4>
+
+                    <div class="d-grid gap-2">
+                    <h5>
                     <label for="roast-selection">Roast</label>
-                    </h4>
+                    </h5>
                     <select id="roast-selection">
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
                         <option selected="all">all</option>
                     </select>
-                    <div class="form-group">
+                    </div>
+
+                    <h5>
                         <label for="Coffee Name" class="form-label">Coffee Name</label>
+                    </h5>
                         <input type="text" id="Coffee Name" name="Coffee Name" class="form-control">
                         <input id="submit" type="submit"/>
                         <hr>
 
                         <h1>Add a Coffee</h1>
-                        Roast
+
                         <form>
-                            <label for="new-roast-selection"></label>
+                            <h5>
+                            <label for="new-roast-selection">Roast</label>
+                            </h5>
                             <select id="new-roast-selection">
                                 <option selected>light</option>
                                 <option>medium</option>
                                 <option>dark</option>
                             </select>
-                            <div class="form-group">
-                                <label for="Name" class="form-label1">Name</label>
-                                <br>
-                                <input type="text" id="Name" name="Name" class="form-control">
-                                <input id="new-submit" type="submit"/>
-                            </div>
-                        </form>
 
-                    </div>
+                            <h5>
+                            <label for="Name" class="form-label1">Name</label>
+                            </h5>
+
+                            <input type="text" id="Name" name="Name" class="form-control">
+                            <input id="new-submit" type="submit"/>
+
+                        </form>
 
         </div>
 
